@@ -1,8 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/tRxoBzS5)
-Add design docs in *images/*
-
-## Please visit this website for a clearer picture of the UML Diagrams: https://lucid.app/lucidchart/7f5c32e5-355c-4bbf-b4ac-ec23f8149c05/edit?viewport_loc=4643%2C-2248%2C3152%2C1309%2C0_0&invitationId=inv_b04a4a3b-f2f9-4e59-80b3-fc21bb5edd82
-
 ## Application Design
 
 The application has 5 defined schemas in the mongo database, answers, comments, questions, tags, and users. The session is also stored in the database. The application starts in App.js then goes to MainPage. MainPage.js
