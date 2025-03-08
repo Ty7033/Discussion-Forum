@@ -1,0 +1,792 @@
+/* Add your CSS here */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: lightgray;
+  height: 100px;
+}
+ #header h1 {
+  margin-left: 470px;
+  color: black;
+}
+#searchInput{
+    height:30px;
+    width:200px;
+    margin-left: 130px;
+}
+.main{
+  display: flex;
+  width: 100%;
+  min-height: 86%;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+ul{
+   width: 200px;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+.question_link, #tags_link, #profile_link{
+  color: blue;
+  text-align: center;
+  font-size: larger;
+  margin-top: 40px;
+}
+
+.right{
+  width: 100%;
+  /* display: flex;
+  margin: 20px; */
+}
+
+.main-table {
+  width: 98.5%;
+  text-align: left;
+  max-height: 85vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* .main-table th{
+  width: 60%;
+} */
+#all_questions{
+  font-size: 25px;
+  padding-left: 20px;
+}
+#newest_button, #active_button, #unanswered_button{
+    height:30px;
+    width:100px;
+    text-align: center;
+    margin-right:-1px;
+    background-color: white;
+}
+.ask_question_button{
+  background-color: rgb(34, 102, 180);
+  color: white;
+  height: 40px;
+}
+.question_status{
+  background-color: white;
+}
+
+.vertical-hash{
+  border-left : 1px dotted black;
+  width: 2px;
+  height: 100vh;
+}
+
+.question{
+  color: rgb(50, 89, 188);
+  width: 50%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+#top{
+    display: flex;
+    align-items: center;
+}
+#q_head{
+    font-size: 30px;
+}
+#u_info{
+  font-size: 15px;
+}
+#ask_button{
+    background-color: rgb(3, 147, 249);
+    color: white;
+    height: 35px;
+    position: relative;
+    margin-left: 780px;
+}
+#ab{
+  background-color: rgb(3, 147, 249);
+  color: white;
+  height: 35px;
+  position: absolute;
+  margin-left: 980px;
+}
+#ab2{
+  background-color: rgb(3, 147, 249);
+  color: white;
+  height: 35px;
+  margin-left: 380px;
+}
+
+#next_row{
+    display: flex;
+    border-bottom: 1.5px dotted black ;
+    margin-left:-20px;
+}
+#ans_row, #c5, #c6, #c7{
+    border-top:1px solid black ;
+    border-collapse: collapse;
+}
+
+#question_count{
+    margin-left:20px;
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 70px;
+}
+#buttons_cell{
+    display: flex;
+    vertical-align: middle;
+    margin-top: 30px;
+    margin-left: 360px;
+    margin-right: 360px;
+}
+.summary{
+  color: grey;
+  width:15%;
+  text-align: left;
+  line-height: 1.5;
+}
+.question_page {
+  color:rgba(0, 0, 0, 0.828);
+  margin-left: 20px;
+  margin-top:20px;
+  max-height: 84vh;
+  overflow-y: auto;
+}
+.table_r1, .summary, .question{
+    border-bottom: 1.5px dotted black;
+}
+.summary{
+    width:80px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+.question{
+    width:600px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px;
+    vertical-align: middle;
+}
+#post_button, #post_answer, #ans_button, #ab, #ab3, #ab4, #delete_button{
+  background-color: rgb(3, 147, 249);
+  color: white;
+  height: 35px;
+}
+#delete_button{
+  margin-left: 20px;
+}
+#q_title, #a_user{
+  height:40px;
+  width: 350px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  resize:none;
+  font: Arial;
+  font-size: 14;
+}
+#q_text, #a_textbox{
+  height:300px;
+  width:350px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  resize: none;
+  font: Arial;
+  font-size: 14;
+}
+#q_tags{
+  height:30px;
+  width:350px;
+  margin-bottom: 20px;
+  text-align: top;
+  resize: none;
+  font: Arial;
+  font-size: 14;
+}
+#q_summary{
+  height:200px;
+  width:350px;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  resize: none;
+  font: Arial;
+  font-size: 14;
+  text-align: top;
+}
+#required, #required1{
+  margin: 100px;
+  font-size: 14;
+  color:rgb(221, 24, 24);
+}
+.labels{
+  line-height: 2;
+  margin:5;
+}
+.instructions{
+  font-size: 15;
+  margin:10;
+}
+.question_page span{
+  margin-left: 150px;
+  color:red;
+}
+sup{
+    color:red;
+}
+#post_table {
+    width: 101%;
+    margin-left: -20px;
+    border-collapse: collapse;
+}
+.innertable button, .tag_buttons{
+    background-color:rgb(96, 95, 95);
+    color:white;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+#answer_title{
+    font-size: 20px;
+}
+#answer_page{
+  height: 85vh;
+  overflow-y: auto;
+}
+#answer_form{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+#intro{
+    width:100%;
+}
+#c1{
+    width: 12%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px;
+    vertical-align: left;
+    
+}
+#c2{
+    width:72%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px;
+    vertical-align: middle;
+    
+}
+#ab{
+    margin-left: 130px;
+    margin-top: -50px;
+    margin-right: 110px;
+    position: relative;
+    
+}
+#ans_row2, #c8,#c9, #c10 {
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+#second_row, #answer_top{
+  width: 100%;
+}
+
+#c5{
+  width: 12%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: left;
+  padding-top: 20px;
+
+}
+#c6{
+  width: 60%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: left;
+}
+#c7{
+  vertical-align: middle;
+  text-align: left;
+  padding-left: 50px;
+  border-collapse: collapse;
+  padding-bottom: 10px;
+}
+.userasked{
+    color:red;
+}
+.user_info{
+    color:green;
+    line-height: 1px;
+}
+.time{
+    color:grey;
+}
+#c7 p{
+    line-height: 1.5px;
+}
+#answer_posts{
+    border-collapse: collapse;
+    width:100%;
+}
+#answer_vote{
+  width:12%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.answer_text{
+    width:60%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.answer_box{
+    border-collapse: collapse;
+    width: 100%;
+}
+.info_cell{
+    padding-left: 50px;
+    line-height: 1.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#ans_button{
+    margin-left: 10px;
+    overflow-y: auto;
+    position: relative;
+}
+#answer_top, #c2, #c3{
+    margin-left: -3px;
+    border-collapse: collapse;
+}
+.t, .u{
+   display: inline-block;
+   margin-left:5px;
+}
+.t, .time_info{
+    color:grey;
+    font-size: 16px;
+}
+.u{
+    color:red;
+    font-size: 16px;
+}
+.current{
+    background-color:lightgrey;
+    display: block;
+    padding: 8px;
+}
+#tags_page{
+  width: 100%;
+  max-height: 88vh;
+  overflow-y: scroll;
+}
+#head_css{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-left: 20px;
+  align-items: center;
+}
+#mid-ele{
+  padding-left: 23rem;
+}
+#tag_container{
+  width: 100%;
+  margin: 4rem auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+  gap: 2rem; /*vertical distance*/
+}
+.boxes{ /*content inside boxes*/
+  width: 200px;
+  height: 110px;
+  background-color: white;
+  border: dashed;
+  margin: 10px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.boxes a{
+  color: rgb(34, 103, 177);
+}
+.boxes p{
+  color:black;
+}
+.not_found{
+    margin: 50px;
+}
+#all_tags{
+  margin-left: 80px;
+}
+#one, #two, #three, #four, #five, #six{
+  font-size: 20px;
+}
+.ans_form span{
+  margin-left: 150px;
+  color:red;
+}
+
+#register_form, #login_form{
+  display: block;
+  margin-top: 100px;
+  margin-left: 350px;
+}
+#welcome{
+  margin-left: 650px;
+  font-size: 60px;
+  font-family: 'Dancing Script', cursive;
+}
+#option-box{
+  display: flex;
+  margin-left:550px;
+  margin-top: 20px;
+  width: 400px;
+  height: 350px;
+  border: 1px solid lightblue;
+  padding: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+#login, #register, #guest, #register_button, #login_button{
+  background-color: rgb(3, 147, 249);
+  color: white;
+  height: 35px;
+  width: 105px;
+}
+#logout_button{
+  display: inline;
+  border-radius: 10px;
+  background-color: rgb(47, 160, 252);
+  color: white;
+  height: 35px;
+  width: 105px;
+  margin-left: 55px;
+}
+#profile_button{
+  display: inline;
+  border-radius: 10px;
+  background-color: rgb(47, 160, 252);
+  color: white;
+  height: 35px;
+  width: 105px;
+  margin-left: 35px;
+}
+#login, #register{
+  margin-bottom: 10px;
+  margin-top: 100px;
+}
+#login{
+  margin-left: 85px;
+  margin-right:20px;
+}
+#guest{
+  margin-top: 230px;
+  margin-left: -110px;
+}
+#continue{
+  margin-top: 180px;
+  margin-left: -175px;
+  font-size: 20px;
+}
+#login_form{
+  display: block;
+  margin-left:500px;
+  margin-top: 50px;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 480px;
+  border: 1px solid lightblue;
+  padding: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  
+}
+#register_form{
+  display: block;
+  margin-left:500px;
+  margin-top: 50px;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+  border: 1px solid lightblue;
+  padding: auto;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.register_labels, .login_labels{
+  margin-left: 50px;
+}
+
+#firstname, #lastname, #email, #password, #password_confirm, #username{
+  margin-left: 50px;
+  width: 400px;
+  height:20px;
+}
+#register_button, #login_button{
+  margin-top: 10px;
+  margin-left:350px;
+}
+.error1{
+  margin-left: 50px;
+  color:red;
+}
+.alternative,.log{
+  margin-top:20px;
+  margin-left: 50px;
+  margin-right: -40px;
+}
+.log, .reg{
+  font-size: 12px;
+}
+
+#sub{
+  margin-left: 80px;
+  margin-top:-10px;
+  display: flex;
+}
+#login_form{
+  height: 300px;
+  margin-top: 120px;
+}
+
+#prev_button, #next_button, #prev_button1, #next_button1,  #prev_button3, #next_button3{
+  background-color: lightgrey;
+  color: black;
+  height: 25px;
+  width: 105px;
+  border-radius: 10px;
+}
+#prev_button, #prev_button3{
+  margin-left: 800px;
+  margin-right: 50px;
+}
+#views_count{
+  color: black;
+  font-size: 18px;
+}
+#answer_number{
+  font-size: 22px;
+  margin-left: 30px;
+}
+#answer_top, #second_row{
+  border-collapse: collapse;
+}
+#vote_up,
+#vote_down {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: white;
+  overflow: hidden;
+  position: relative; 
+}
+
+#vote {
+  font-size: 20px;
+}
+
+#vote_up::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent; 
+  border-bottom: 20px solid #555; 
+}
+#vote_down::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(360deg); 
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent; 
+  border-right: 10px solid transparent; 
+  border-top: 20px solid #555; 
+}
+#add_comment{
+  display: inline;
+  background-color: lightgray(3, 147, 249);
+  color: black;
+  height: 35px;
+  width: 105px;
+}
+#comment_count,
+#add_comment {
+  display: inline-block; 
+  vertical-align: middle; 
+  margin-right: 100px;
+}
+#comment_table{
+  width: 100%;
+  overflow-x: hidden;
+  border-bottom: 1px solid black; 
+  border-collapse: collapse;
+}
+#col1{
+  width: 20%;
+}
+#col3{
+  width: 30%;
+}
+#comment_box{
+   margin-left: 150px;
+   width: 750px;
+   border-collapse: collapse;
+}
+#cols{
+   border-bottom: 1px solid lightgray;
+   border-collapse: collapse;
+}
+#comment_text{
+  display: inline;
+  margin-left: 150px;
+  margin-right: 10px;
+}
+#comment_user{
+  color:blue;
+}
+#prev_button1{
+  margin-left: 400px;
+  margin-right: 50px;
+}
+.static{
+  position: absolute; /* Position absolute within the relative container */
+  bottom: 2px;
+}
+#b_buttons{
+  display: flex;
+}
+#edit_buttons{
+  margin-top: 10px;
+}
+#tag_delete{
+  margin-right: 10px;
+}
+#ques_count{
+   margin-top: 1px;
+}
+#error7{
+  margin-bottom: 1px;
+  margin-top: 5px;
+  color: red;
+}
+#error0{
+  color: red;
+  margin-left: 150px;
+}
+#comment_votes{
+  margin-left: 100px;
+  margin-right: -130px;
+}
+#comment_v{
+  margin-left: 60px;
+  margin-right: -80px;
+  border-radius: 20px;;
+}
+#nav{
+  overflow: hidden;
+  background-color: lightgrey; 
+  height: 50px;
+  margin-left:-1px;
+}
+#nav a{
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    margin-left: 100px;
+}
+.on{
+  background-color:rgb(3, 147, 249);
+  height:100%;
+  width:8%;
+}
+#profile_intro{
+  margin-left: 10px;
+}
+#Member{
+  margin-left: 10px;
+  color: grey;
+}
+#profile{
+  overflow-y: auto;
+}
+#info{
+  max-height: 65vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#d_button{
+  border-radius: 10px;
+  margin-left: 50px;;
+}
+#quest_title{
+  margin-left: 100px;
+  font-size: 20px;
+}
+.warning{
+  margin-left: 20px;
+}
+#u_col{
+  width:100%;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  overflow-x: hidden;
+}
+#user_table{
+  width: 100%;
+  margin-left:-3px;
+  margin-right: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#com_err{
+  color: red;
+  margin-left: 550px;
+  font-size: 30px;
+}
+#er{
+  display:flex;
+}
+#restart{
+  margin-left: 20px;
+  border-radius: 10px;
+}
